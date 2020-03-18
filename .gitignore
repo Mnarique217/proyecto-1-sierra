@@ -1,0 +1,21 @@
+
+# dependencies
+/node_modules
+
+# IDE - VSCode
+/.vscode
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
