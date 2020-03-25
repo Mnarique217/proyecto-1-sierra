@@ -1,15 +1,1 @@
-.border-container {
-  border: solid 1px black;
-}
-
-header {
-  @extend .border-container;
-}
-
-main {
-  @extend .border-container;
-}
-
-footer {
-  @extend .border-container;
-}
+#LayoutComponent {}

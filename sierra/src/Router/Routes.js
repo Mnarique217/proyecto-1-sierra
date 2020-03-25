@@ -1,27 +1,22 @@
 
 /** Componentes */
 import {
-  NotFoundComponent
-} from '../Components';
+  MainComponent,
+  NotFoundComponent,
+} from '../Pages';
 
 export const routes = [
   {
     path: "/main",
-    component: null
+    component: MainComponent
   },
   {
-    path: "/main",
+    path: "/about",
     component: null,
-    routes: [
-      {
-        path: "/main",
-        component: null,
-      },
-      {
-        path: "/main",
-        component: null,
-      }
-    ]
+  },
+  {
+    path: "/Login",
+    component: null,
   },
   {
     path: "**",

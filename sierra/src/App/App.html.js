@@ -9,7 +9,5 @@ import './App.scss';
 
 /** Html del AppComponent */
 export const html = () => (
-  <div>
-    <LayoutComponent></LayoutComponent>
-  </div>
+  <LayoutComponent></LayoutComponent>
 );
