@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  #ControlInputComponent .aside-container .title {
+    padding-top: 15px;
+  }
+}
+
+#ControlInputComponent {
+
+  .icon-box {
+    margin-bottom: 10px;
+    line-height: 24px;
+
+    .icon {
+      background: #fff;
+      float: left;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 50%;
+      border: 2px solid #2dc997;
+
+      i {
+        color: #2dc997;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .input-text {
+    width: 100%;
+    border: 2px solid #2dc997;
+  }
+
+  .title {
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 2%;
+  }
+}

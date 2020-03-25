@@ -9,11 +9,13 @@ import {html} from './Aside.html';
  */
 export class AsideComponent extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
-    return html();
+    return html({
+      title: 'Keywords'
+    });
   }
 };
