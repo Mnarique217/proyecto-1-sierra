@@ -1,5 +1,5 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Otros Componentes */
 import {ControlInputComponent} from '../index'
@@ -13,30 +13,28 @@ export const html = (args) => (
     <div className="row">
 
       <div className="col-md-3">
-        <ControlInputComponent
+        <ControlInputTextComponent
           id="description"
           icon="fa fa-shopping-bag"
           label="Search by descriptions"
-          value=""
-          handleChanges={args.handleChangeDescriptions}></ControlInputComponent>
+          handleChanges={args.handleChangeDescriptions}></ControlInputTextComponent>
       </div>
 
       <div className="col-md-3">
-        <ControlInputComponent
+        <ControlInputTextComponent
           id="location"
           icon="fa fa-map-marker"
           label="Search by location"
-          value=""
-          handleChanges={args.handleChangeLocation}></ControlInputComponent>
+          handleChanges={args.handleChangeLocation}></ControlInputTextComponent>
       </div>
 
       <div className="col-md-3">
-        <ControlInputComponent
+        {/* <ControlInputComponent
           id="isFullTime"
           icon="fa fa-clock-o"
           label="Search by type job"
           value=""
-          handleChanges={args.handleChangeisFullTime}></ControlInputComponent>
+          handleChanges={args.handleChangeisFullTime}></ControlInputComponent> */}
       </div>
 
       <div className="col-md-1">

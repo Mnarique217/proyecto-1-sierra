@@ -1,5 +1,5 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Otros Componentes */
 import {KeywordsComponent} from '../index';

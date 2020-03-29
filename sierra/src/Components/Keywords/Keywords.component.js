@@ -1,8 +1,8 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del KeywordsComponent */
-import {html} from './Keywords.html';
+import {html} from './keywords.html';
 
 /**
  * Clase KeywordsComponent

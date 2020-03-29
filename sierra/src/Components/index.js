@@ -1,3 +1,3 @@
-export * from './Aside/Aside.component';
-export * from './Keywords/Keywords.component';
-export * from './Control-Input/ControlInput.component';
+export * from './aside/aside.component';
+export * from './keywords/keywords.component';
+export * from './control-input-text/control-input-text.component';

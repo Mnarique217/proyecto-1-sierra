@@ -1,8 +1,8 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del LayoutComponent */
-import {html} from './Layout.html';
+import {html} from './layout.html';
 
 /**
  * Clase LayoutComponent

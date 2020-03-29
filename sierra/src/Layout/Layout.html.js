@@ -1,13 +1,13 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from "./node_modules/react-router-dom";
 
 /** Componentes Externos */
-import {AsideComponent} from '../Components'
+import {AsideComponent} from '../components'
 
 /** Estilos del LayoutComponent */
 import './Layout.scss';

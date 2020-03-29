@@ -1,8 +1,8 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del AppComponent */
-import {html} from './App.html';
+import {html} from './app.html';
 
 /**
  * Clase AppComponent

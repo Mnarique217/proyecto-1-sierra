@@ -1,8 +1,8 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del AsideComponent */
-import {html} from './Aside.html';
+import {html} from './aside.html';
 
 /**
  * Clase AsideComponent

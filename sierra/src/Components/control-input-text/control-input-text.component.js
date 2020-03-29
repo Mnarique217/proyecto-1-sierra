@@ -1,13 +1,13 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del ControlInputComponent */
-import {html} from './ControlInput.html';
+import {html} from './control-input-text.html';
 
 /**
  * Clase ControlInputComponent
  */
-export class ControlInputComponent extends React.Component {
+export class ControlInputTextComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ export class ControlInputComponent extends React.Component {
       id: this.props.id,
       icon: this.props.icon,
       label: this.props.label,
-      value: this.props.value
+      value: ''
     };
 
     this.handleChanges = this.handleChanges.bind(this);

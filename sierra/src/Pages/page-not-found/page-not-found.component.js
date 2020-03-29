@@ -1,8 +1,8 @@
 /** Importacion de librerias */
-import React from 'react';
+import React from './node_modules/react';
 
 /** Html del NotFoundComponent */
-import {html} from './NotFound.html';
+import {html} from './page-not-found.html';
 
 /**
  * Clase NotFoundComponent
