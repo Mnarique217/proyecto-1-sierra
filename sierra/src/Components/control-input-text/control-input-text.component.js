@@ -1,5 +1,5 @@
 /** Importacion de librerias */
-import React from './node_modules/react';
+import React from 'react';
 
 /** Html del ControlInputComponent */
 import {html} from './control-input-text.html';
@@ -12,9 +12,8 @@ export class ControlInputTextComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: this.props.id,
-      icon: this.props.icon,
-      label: this.props.label,
+      id: '',
+      placeholder: '',
       value: ''
     };
 
@@ -22,19 +21,27 @@ export class ControlInputTextComponent extends React.Component {
   }
 
   componentDidMount() {
-    this.refs.inputSearch.focus();
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({
+      id: props.id,
+      placeholder: props.placeholder,
+    });
   }
 
   handleChanges(e) {
-    e.persist()
-    this.setState({
-      value: e.target.value
-    }, () => {
+    e.persist();
+    this.setState({value: e.target.value}, () => {
       this.props.handleChanges(this.state.value);
     });
   }
 
   render() {
-    return html(this.state, this.handleChanges);
+    return html({
+      id: this.state.id,
+      placeholder: this.state.placeholder,
+      handleChanges: this.handleChanges
+    });
   }
 };

@@ -1,11 +1,11 @@
 /** Importacion de librerias */
-import React from './node_modules/react';
+import React from 'react';
 
 /** Importacion de Componentes Externos */
 import {LayoutComponent} from '../layout/layout.component';
 
 /** Estilos del AppComponent */
-import './App.scss';
+import './app.scss';
 
 /** Html del AppComponent */
 export const html = () => (

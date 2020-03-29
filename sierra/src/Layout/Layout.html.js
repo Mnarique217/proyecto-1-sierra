@@ -1,16 +1,17 @@
 /** Importacion de librerias */
-import React from './node_modules/react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "./node_modules/react-router-dom";
-
-/** Componentes Externos */
-import {AsideComponent} from '../components'
+} from "react-router-dom";
 
 /** Estilos del LayoutComponent */
-import './Layout.scss';
+import './layout.scss';
+
+/** Componentes Externos */
+import {AsideComponent} from '../main-components'
+
 
 /** Html del LayoutComponent */
 export const html = () => (

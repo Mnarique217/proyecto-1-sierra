@@ -2,7 +2,7 @@
 import React from 'react';
 
 /** Estilos del NotFoundComponent */
-import './NotFound.scss';
+import './pages-not-found.scss';
 
 /** Html del NotFoundComponent */
 export const html = () => (

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 /** Bootstrap */
-import AppComponent from './App/App.component';
+import AppComponent from './app/app.component';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<AppComponent />, document.getElementById('root'));

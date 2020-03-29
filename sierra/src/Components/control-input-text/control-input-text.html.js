@@ -1,37 +1,20 @@
 /** Importacion de librerias */
-import React from './node_modules/react';
+import React from 'react';
 
 /** Estilos del AsideComponent */
-import './ControlInput.scss';
+import './control-input-text.scss';
 
 /** Html del AsideComponent */
-export const html = (state, onChange) => {
+export const html = (args) => {
   return (
-    <div id="ControlInputComponent">
-
-      <div className="icon-box wow fadeInUp">
-        <div className="icon">
-          <i className={state.icon}></i>
-        </div>
-      </div>
-
-      <label htmlFor={`input-search${state.id}`} className="title">{state.label}</label>
-      <input type="text" ref="inputSearch" id={`input-search${state.id}`} className="input-text"
-        onChange={onChange} value={state.value} />
-
-      {/* <div className="input-radio-container">
-        <input type="radio" value="true" />
-        <p>Full Time </p>
-      </div>
-
-      <div className="input-radio-container">
-        <input type="radio" value="false" />
-        <p>Partial Time </p>
-      </div> */}
-
-
-
-
+    <div id="ControlInputTextComponent">
+      <input  type="text"
+              ref="input-search"
+              id={`input-search-${args.id}`}
+              className="input-text"
+              value={args.value}
+              placeholder={args.placeholder}
+              onChange={args.handleChanges}/>
     </div>
   )
 };
