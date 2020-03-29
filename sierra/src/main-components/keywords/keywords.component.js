@@ -4,6 +4,9 @@ import React from 'react';
 /** Html del KeywordsComponent */
 import {html} from './keywords.html';
 
+/** Servicio */
+import {keywordsService} from '../../services';
+
 /**
  * Clase KeywordsComponent
  */
@@ -22,14 +25,14 @@ export class KeywordsComponent extends React.Component {
     this.initJobType();
 
     this.keywords = {
-      descriptions: '',
+      description: '',
       location: '',
       isFullTime: true,
     };
   }
 
   handleChangesJobDescription(event){
-    this.keywords.descriptions = event;
+    this.keywords.description = event;
   }
 
   handleChangesJobLocation(event){
@@ -78,7 +81,7 @@ export class KeywordsComponent extends React.Component {
   }
 
   submit() {
-    console.log(this.keywords);
+    keywordsService.updateKeywords(this.keywords);
   }
 
   render() {
