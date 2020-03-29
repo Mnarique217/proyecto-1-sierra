@@ -6,11 +6,12 @@ import {
   Route
 } from "react-router-dom";
 
-/** Componentes Externos */
-import {AsideComponent} from '../Components'
-
 /** Estilos del LayoutComponent */
-import './Layout.scss';
+import './layout.scss';
+
+/** Componentes Externos */
+import {AsideComponent} from '../main-components'
+
 
 /** Html del LayoutComponent */
 export const html = () => (

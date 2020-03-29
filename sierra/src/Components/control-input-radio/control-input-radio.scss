@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  #ControlInputRadioComponent {}
+}
+
+#ControlInputRadioComponent {
+  margin-bottom: 2%;
+  padding-left: 1%;
+
+  input{
+    margin-right: 2%;
+  }
+  label {
+    font-size: 0.8em;
+  }
+}

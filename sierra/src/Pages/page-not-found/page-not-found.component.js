@@ -2,7 +2,7 @@
 import React from 'react';
 
 /** Html del NotFoundComponent */
-import {html} from './NotFound.html';
+import {html} from './page-not-found.html';
 
 /**
  * Clase NotFoundComponent

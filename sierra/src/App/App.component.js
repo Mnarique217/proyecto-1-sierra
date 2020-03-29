@@ -2,7 +2,7 @@
 import React from 'react';
 
 /** Html del AppComponent */
-import {html} from './App.html';
+import {html} from './app.html';
 
 /**
  * Clase AppComponent

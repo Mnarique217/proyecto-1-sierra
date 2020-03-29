@@ -2,7 +2,7 @@
 import React from 'react';
 
 /** Html del LayoutComponent */
-import {html} from './Layout.html';
+import {html} from './layout.html';
 
 /**
  * Clase LayoutComponent

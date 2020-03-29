@@ -2,10 +2,10 @@
 import React from 'react';
 
 /** Importacion de Componentes Externos */
-import {LayoutComponent} from '../Layout/Layout.component';
+import {LayoutComponent} from '../layout/layout.component';
 
 /** Estilos del AppComponent */
-import './App.scss';
+import './app.scss';
 
 /** Html del AppComponent */
 export const html = () => (
