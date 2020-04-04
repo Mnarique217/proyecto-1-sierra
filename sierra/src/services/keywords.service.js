@@ -1,4 +1,4 @@
-import { Subject } from 'rxjs';
+import {Subject} from 'rxjs';
 
 const subject = new Subject();
 
