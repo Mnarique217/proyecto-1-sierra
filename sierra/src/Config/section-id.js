@@ -1,3 +1,6 @@
 export const SECTION_ID = {
-  jobList: 'job-list'
+  keywords: 'keywords',
+  jobList: 'job-list',
+  jobDescription: 'job-description',
+  topJobs: 'top-jobs'
 }
