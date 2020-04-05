@@ -9,7 +9,7 @@ import './top-jobs.scss';
 
 /** Html del AppComponent */
 export const html = (args) => (
-  <section id="TopJobsComponent">
+  <div id="TopJobsComponent">
 
     <div className="container wow fadeInUp">
 
@@ -55,5 +55,5 @@ export const html = (args) => (
       </div>
 
     </div>
-  </section>
+  </div>
 );

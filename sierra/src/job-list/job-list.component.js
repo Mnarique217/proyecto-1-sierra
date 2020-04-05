@@ -10,7 +10,7 @@ import {JobListService} from './service/job-list.service';
 /**
  * Clase ListJobsComponent
  */
-export default class JobListComponent extends React.Component {
+export class JobListComponent extends React.Component {
 
   constructor(props) {
     super(props);

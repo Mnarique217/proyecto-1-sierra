@@ -30,14 +30,14 @@ const getJob = async (params) => {
  */
 const createParams = (args) => {
   const {description, location} = args;
-  let params = `full_time=${isFullTime}`;
+  let params = `full_time=${args.isFullTime}`;
 
   if (description.length) {
-    params = `&search=${keywords.isFullTime}`;
+    params = `&search=${args.description}`;
   }
 
   if (location.length) {
-    params += `&location=${keywords.isFullTime}`;
+    params += `&location=${args.location}`;
   }
 
   return params;

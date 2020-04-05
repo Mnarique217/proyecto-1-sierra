@@ -10,7 +10,7 @@ import {TopJobService} from './service/top-jobs.service';
 /**
  * Clase TopJobsComponent
  */
-export default class TopJobsComponent extends React.Component {
+export class TopJobsComponent extends React.Component {
 
   constructor(props) {
     super(props);
