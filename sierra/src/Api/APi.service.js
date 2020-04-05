@@ -9,7 +9,7 @@ const GITHUB_API = config.GITHUB_API;
  * @param {*} params
  */
 const get = async (params) => {
-  const response = await fetch(`${GITHUB_API}${params}`);
+  const response = await fetch(`${GITHUB_API}&markdown=true&${params}`);
   const data = response.json();
   return data;
 }
@@ -18,10 +18,14 @@ const get = async (params) => {
  * Cargar una lista de trabajos bajo los criterios definidos en los filtros
  * @param {*} params
  */
-const getJob = async (params) => {
-  const urlParams = createParams(params);
-  const data = await get(urlParams);
-  return data;
+const getJob = async (params = null) => {
+  let urlParams = '';
+
+  if (params) {
+    urlParams = createParams(params);
+  }
+
+  return await get(urlParams);
 }
 
 /**
@@ -48,7 +52,7 @@ const createParams = (args) => {
  * @param {*} count
  */
 const getTopJobs = async (count) => {
-  const data = await get(null);
+  const data = await get();
   const list = data.filter(e => e.company_logo !== null);
   return list.slice(0, count);
 }
