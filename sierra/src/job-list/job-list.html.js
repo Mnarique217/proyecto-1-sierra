@@ -27,14 +27,14 @@ export const html = (index, displayRecords, pagesItems, previousPage, changePage
         <nav>
           <ul className="pagination pagination-sm justify-content-end">
             <li className="page-item">
-              <a className="page-link" href={`#job-list/page=${index}`} aria-label="Previous" onClick={previousPage}>
+              <a className="page-link" href="#job-list" aria-label="Previous" onClick={previousPage}>
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
 
             {pagesItems.map((e) => (
-              <li className={`page-item ${index === e ? 'active' : ''}`}>
-                <a className="page-link" href={`#job-list/page=${index === e ? index : e}`} onClick={() => changePage(e)}>
+              <li className={`page-item ${index === e ? 'active' : ''}`} key={`li-${e}`}>
+                <a className="page-link" href="#job-list" onClick={() => changePage(e)}>
                   {e}
                   {
                     index === e ? <span className="sr-only">(current)</span> : ''
@@ -44,7 +44,7 @@ export const html = (index, displayRecords, pagesItems, previousPage, changePage
             ))}
 
             <li className="page-item">
-              <a className="page-link" href={`#job-list/page=${index}`} aria-label="Next" onClick={nextPage}>
+              <a className="page-link" href="#job-list" aria-label="Next" onClick={nextPage}>
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
