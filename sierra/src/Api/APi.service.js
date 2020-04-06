@@ -9,7 +9,7 @@ const GITHUB_API = config.GITHUB_API;
  * @param {*} params
  */
 const get = async (params) => {
-  const response = await fetch(`${GITHUB_API}&markdown=true&${params}`);
+  const response = await fetch(`${GITHUB_API}&markdown=true${params}`);
   const data = response.json();
   return data;
 }
@@ -18,7 +18,7 @@ const get = async (params) => {
  * Cargar una lista de trabajos bajo los criterios definidos en los filtros
  * @param {*} params
  */
-const getJob = async (params = null) => {
+const getJobs = async (params = null) => {
   let urlParams = '';
 
   if (params) {
@@ -33,15 +33,27 @@ const getJob = async (params = null) => {
  * @param {*} args
  */
 const createParams = (args) => {
-  const {description, location} = args;
-  let params = `full_time=${args.isFullTime}`;
+  const {page, description, location, isFullTime} = args;
+  let params = '';
 
-  if (description.length) {
-    params = `&search=${args.description}`;
+  if (page) {
+    params += `&page=${page}`;
   }
 
-  if (location.length) {
-    params += `&location=${args.location}`;
+  if (description) {
+    if (description.length) {
+      params = `&search=${args.description}`;
+    }
+  }
+
+  if (location) {
+    if (description.length) {
+      params += `&location=${args.location}`;
+    }
+  }
+
+  if (isFullTime) {
+    params += `&full_time=${args.isFullTime}`;
   }
 
   return params;
@@ -52,13 +64,13 @@ const createParams = (args) => {
  * @param {*} count
  */
 const getTopJobs = async (count) => {
-  const data = await get();
+  const data = await get('');
   const list = data.filter(e => e.company_logo !== null);
   return list.slice(0, count);
 }
 
 export const ApiService = {
   getTopJobs: getTopJobs,
-  getJob: getJob
+  getJobs: getJobs
 }
 

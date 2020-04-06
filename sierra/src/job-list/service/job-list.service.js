@@ -10,8 +10,8 @@ const subject = new Subject();
 const jobList = () => subject.asObservable();
 
 /** Obtener la lista completa de Trabajos, busqueda por parametros */
-const get = async (params) => {
-  const data = await ApiService.getJob(params);
+const get = async (params = null) => {
+  const data = await ApiService.getJobs(params);
   subject.next(data);
 }
 

@@ -1,6 +1,9 @@
 /** Importacion de librerias */
 import React from 'react';
 
+/** Configuracion */
+import {SECTION_ID} from '../../config';
+
 /** Estilos del ListJobsComponent */
 import './job-container.scss';
 
@@ -10,28 +13,30 @@ export const html = (job) => (
     <div className="box">
 
       <div className="icon">
-        <a href="#">
+        <a href={`#${SECTION_ID.jobDescription}`}>
           <i className="fa fa-desktop"></i>
         </a>
       </div>
 
       <table>
-        <tr>
-          <td className="title">
-            <h4><a href="">{job.title}</a></h4>
-            <p className="description">
-              <a href="#">{job.company}</a> - <strong>{job.type}</strong>
-            </p>
-          </td>
-          <td className="meta">
-            <span className="location">{job.location}</span>
-            <span>{job.created_at}</span>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td className="title">
+              <h4><a href={`#${SECTION_ID.jobDescription}`}>{job.title}</a></h4>
+              <p className="description">
+                <a href={`#${SECTION_ID.jobDescription}`}>{job.company}</a> - <strong>{job.type}</strong>
+              </p>
+            </td>
+            <td className="meta">
+              <span className="location">{job.location}</span>
+              <span>{job.created_at}</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <div className="more-info">
-        <a href="#">more...</a>
+        <a href={`#${SECTION_ID.jobDescription}`}>more...</a>
       </div>
 
     </div>
