@@ -5,7 +5,7 @@ import React from 'react';
 import {
   KeywordsJobDescriptionComponent,
   KeywordsJobTypeComponent
-} from '../../components';
+} from '../components';
 
 /** Estilos del Keywords */
 import './keywords.scss';

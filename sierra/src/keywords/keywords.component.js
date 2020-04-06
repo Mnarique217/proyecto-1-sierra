@@ -5,7 +5,7 @@ import React from 'react';
 import {html} from './keywords.html';
 
 /** Servicio */
-import {keywordsService} from '../../services';
+import {keywordsService} from '../services';
 
 /**
  * Clase KeywordsComponent
